@@ -14,9 +14,25 @@ import solidspy.assemutil as ass        # Rutinas de ensamblaje
 import solidspy.solutil as sol          # Solucionador de ecuaciones
 import solidspy.postprocesor as pos     # Rutinas de postprocesado
 
+def crosshairs(x, y):
+    """Función para dibujar líneas horizontales y verticales en un gráfico.
+    
+    Parámetros:
+    x (float): Coordenada x del punto de intersección de las líneas.
+    y (float): Coordenada y del punto de intersección de las líneas.
+    
+    Retorna:
+    None: No hay valor de retorno explícito, solo traza las líneas en el gráfico.
+    """
+    # Línea horizontal en y
+    plt.axhline(y, color='r', zorder=10)
+    # Línea vertical en x
+    plt.axvline(x, color='r', zorder=10)
+    # Devuelve None (no hay resultado explícito)
+    return
 
 
-def zapata(P1 , P2 , V1, V2):
+def zapata(P1 , P2 , V1, V2, id_estrato):
     """
     Realiza el analisis de tensiones para un sistema columna-zapata sobre un semi-espacio
     estratificado.
@@ -81,7 +97,11 @@ def zapata(P1 , P2 , V1, V2):
     
     
     nodes     = np.loadtxt('files/Pnodes.txt', ndmin=2)
-    mats      = np.loadtxt('files/Pmater.txt', ndmin=2)
+    
+    if id_estrato==0:
+        mats = np.loadtxt('files/Pmater.txt', ndmin=2)
+    else:     
+        mats = np.loadtxt('files/Pmater2.txt', ndmin=2)
     elements  = np.loadtxt('files/Peles.txt', ndmin=2, dtype=np.int)
     loads     = np.loadtxt('files/Ploads.txt', ndmin=2)
     
