@@ -1,2 +1,2 @@
 
-Class Notes for the Course Introduction to the Finite Element Methods
+Cuadernos de jupyter para cursos de introducción al método de elementos finitos y Medio Continuo.
