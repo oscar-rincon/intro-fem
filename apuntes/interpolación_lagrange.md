@@ -24,3 +24,10 @@ $$
 
 [Un pequeño ejemplo de interpolación de Lagrange](https://github.com/oscar-rincon/intro-fem/tree/main/programas).
 
+
+Para satisfacer que $p\left(x^I\right)=f\left(x^I\right)$ el polinomio de interpolación debe cumplir que:
+
+
+$$
+L^I\left(x^J\right)=\delta^{I J}
+$$
