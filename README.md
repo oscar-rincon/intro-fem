@@ -18,7 +18,7 @@ conda install --file requirements.txt
 
 El repositorio esta organizado de la siguiente manera:
 
-- notebooks de guía
-- tareas
-- ejemplos
+- [notebooks de guía](https://github.com/oscar-rincon/intro-fem/tree/main/notebooks%20de%20gu%C3%ADa)
+- [tareas](https://github.com/oscar-rincon/intro-fem/tree/main/tareas)
+- [apuntes](https://github.com/oscar-rincon/intro-fem/tree/main/apuntes)
  
