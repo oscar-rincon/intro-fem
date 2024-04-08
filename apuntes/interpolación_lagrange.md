@@ -1,7 +1,26 @@
 
-Considere una función $f(x)$ cuyos valores son conocidos en $x_1, x_2, \ldots, x_n$. Sin embargo se requiere concocer el valor de $f(x)$ en cualquier punto $x \in\left[x_1, x_n\right]$ 
+Considere una función $f(x)$ cuyos valores son conocidos en $x_1, x_2, \ldots, x_n$. Sin embargo se requiere concocer el valor de $f(x)$ en algun punto en $x \in\left[x_1, x_n\right]$ diferente a alguno de los $n$ puntos.
+
+Este proceso envuelve 2 pasos:
+
+1. Ajustar una función aproximada, conocida como interpolación polinomial.
+2. Evaular la función en el punto de interes donde la función es conocida.
 
 
-Let $f(x)$ be an unknown function, whose values, however, are known at $n$ discrete points $x_1, x_2, \ldots, x_n$. We want to know (interpolate) the value of $f(x)$ at an arbitrary point $x \in\left[x_1, x_n\right]$ and different to one of the $n$ points.
+Para ajustar la función se utiliza el **teorema de interpolación de Lagrange** el cual afirma que:
 
-The problem of interpolation is precisely that of finding the unknown value of $f(x)$ using the known values $\left\{f^1, f^2, \ldots, f^n\right\}$. As schematically described in fig. 2.1 it involves two steps:
+
+Dados un conjunto de puntos $\left\{\left(x^1, y^1\right), \cdots,\left(x^n, y^n\right)\right\}$ donde $y^n \equiv f\left(x^n\right)$. Entonces existe un unico polinomio $p(x)$ of order at most $(n-1)$ donde  $p\left(x^I\right)=f\left(x^I\right)$ para $I=1,2, \cdots, n "$. Este polinomio esta dado por:
+
+$$
+p(x)=L^1(x) f\left(x^1\right)+L^2(x) f\left(x^2\right)+\ldots+L^n(x) f\left(x^n\right)
+$$
+ 
+y el termino $L^I(x)$ es expresado como:
+
+$$
+L^I(x)=\prod_{\substack{J=1 \\ I \neq J}}^n \frac{\left(x-x^J\right)}{\left(x^I-x^J\right)} .
+$$
+
+[Un video que explica este teorema](https://www.youtube.com/watch?v=nvkX1Bd90Gk).
+
