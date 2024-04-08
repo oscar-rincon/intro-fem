@@ -7,7 +7,7 @@ Este proceso envuelve 2 pasos:
 2. Evaular la función en el punto de interes donde la función es conocida.
 
 
-Para ajustar la función se utiliza el **teorema de interpolación de Lagrange** el cual afirma que:
+Para ajustar la función se utiliza el [teorema de interpolación de Lagrange](https://www.youtube.com/watch?v=nvkX1Bd90Gk) el cual afirma que:
 
 
 Dados un conjunto de puntos $\left\{\left(x^1, y^1\right), \cdots,\left(x^n, y^n\right)\right\}$ donde $y^n \equiv f\left(x^n\right)$. Entonces existe un unico polinomio $p(x)$ of order at most $(n-1)$ donde  $p\left(x^I\right)=f\left(x^I\right)$ para $I=1,2, \cdots, n "$. Este polinomio esta dado por:
@@ -22,5 +22,5 @@ $$
 L^I(x)=\prod_{\substack{J=1 \\ I \neq J}}^n \frac{\left(x-x^J\right)}{\left(x^I-x^J\right)} .
 $$
 
-[Un video que explica este teorema](https://www.youtube.com/watch?v=nvkX1Bd90Gk).
+[Un pequeño ejemplo de interpolación de Lagrange](https://github.com/oscar-rincon/intro-fem/tree/main/programas).
 
