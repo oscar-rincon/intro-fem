@@ -15,3 +15,10 @@ y luego instalar solidspy y los paquetes requeridos:
 conda install solidspy==1.0.16
 conda install --file requirements.txt
 ```
+
+El repositorio esta organizado de la siguiente manera:
+
+- notebooks de guía
+- tareas
+- ejemplos
+ 
