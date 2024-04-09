@@ -31,3 +31,22 @@ Para satisfacer que $p\left(x^I\right)=f\left(x^I\right)$ el polinomio de interp
 $$
 L^I\left(x^J\right)=\delta^{I J}
 $$
+
+En notación indicial 
+
+$$
+f(x) \approx p(x) = L^Q(x) f(x^Q) = L^Q(x) f^Q
+$$
+
+Que es la función de interpolación de Lagrange. En dos dimensiones:
+
+$$
+f(x,y) \approx p(x,y) = N^Q(x,y) f^Q
+$$
+
+que es la función de forma para dos variables. Tambien para el caso de un vector de posición $\vec{r}$:
+
+$$
+F(\vec{r})=N^Q(\vec{r}) f^Q 
+$$
+
