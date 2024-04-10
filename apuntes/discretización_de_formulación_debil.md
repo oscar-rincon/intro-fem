@@ -140,7 +140,6 @@ $$
 
 Reemplazando la ecuación 9 en la 10:
 
-
 $$
 \begin{equation}
 \sigma_{i j}= C_{i j k l} B_{kl}^{Q}(\vec{x})   \widehat{u}^Q 
