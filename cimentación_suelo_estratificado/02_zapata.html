@@ -7891,6 +7891,20 @@ V2 = 0.75 tf
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>A continuación se presenta un diagrama de cuerpo libre de la zapata.</p>
+<center>
+<p><img alt="Diagrama de cuerpo libre" src="img/diagrama_zapata.png"/></p>
+</center>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Ahora se repite el procedimiento con valores que producen la falla del deposito de suelo al romper el equilibrio del sistema. Para esto se reescalan $\times$ 10  las cargas obtenidas. Se observa como el color purpura alcanza la zona del estrato 1 para la tensión de corte máxima.</p>
 </div>
 </div>
@@ -7950,7 +7964,7 @@ V2 = 0.75 tf
 <span class="p">))</span>
 
 <span class="n">aux</span><span class="o">.</span><span class="n">deformacionFill</span><span class="p">(</span><span class="n">nodes</span> <span class="p">,</span> <span class="n">elements</span> <span class="p">,</span> <span class="n">UC</span> <span class="p">,</span> <span class="n">factor</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">'cividis'</span><span class="p">)</span>
-<span class="n">ref_val</span><span class="o">=</span><span class="mf">9.58</span>
+<span class="n">ref_val</span><span class="o">=-</span><span class="mf">9.58</span>
 <span class="n">aux</span><span class="o">.</span><span class="n">filtered</span><span class="p">(</span><span class="n">nodes</span><span class="p">,</span><span class="n">els</span> <span class="p">,</span> <span class="n">sig_1</span><span class="p">,</span> <span class="n">ref_val</span><span class="p">)</span>
 <span class="n">ref_val</span><span class="o">=</span><span class="mf">0.50</span>
 <span class="n">aux</span><span class="o">.</span><span class="n">filtered</span><span class="p">(</span><span class="n">nodes</span><span class="p">,</span><span class="n">els</span> <span class="p">,</span> <span class="n">TAO</span><span class="p">,</span> <span class="n">ref_val</span><span class="p">)</span>
